@@ -1,0 +1,1235 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+
+/* Reuseable Styles */
+:root {
+  --primaryColor: #141f1f;
+  --whiteColor: #d3d3d3;
+  --whiteColorShade: #ffff;
+  --blueShade: #2d3b3b;
+  --blueShadeB: #082e2e;
+  --black: #000;
+  --lightBlueShade: #7df9ff;
+  --boxShadowA: rgba(125, 249, 255, 0.15);
+  --boxShadowB: rgba(125, 249, 255, 0.23);
+  --font-family: "Bruno Ace", sans-serif;
+}
+
+body {
+  background: var(--primaryColor);
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.mainHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mainHome > .homeHeader {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding: 10px 20px;
+  background-color: var(--primaryColor);
+  left: 0;
+  z-index: 100;
+}
+
+/* Header Section */
+.mainHeader > .headerContainer {
+  padding: 10px 20px;
+}
+
+.mainHeader > .headerContainer > .headerContents > .headerMenuDesktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.main-header
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .logoContainer
+  > .logo {
+  width: 50%;
+  height: 50%;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .logoContainer
+  > .logoText {
+  color: var(--whiteColor);
+  font-size: 15px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .nav
+  > .headerMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .nav
+  > .headerMenu
+  > li
+  > a {
+  text-decoration: none;
+  color: var(--whiteColor);
+  font-size: 17px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .nav
+  > .headerMenu
+  > li:last-child
+  > a {
+  background-color: var(--lightBlueShade);
+  color: var(--black);
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px 40px;
+  border-radius: 10px 0 10px 0;
+  box-shadow: var(--boxShadowA) 0px 3px 6px, var(--boxShadowB) 0px 3px 6px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .nav
+  > .headerMenu
+  > li
+  > a:hover {
+  color: var(--whiteColorShade);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuDesktop
+  > .nav
+  > .headerMenu
+  > li:last-child
+  > a:hover {
+  color: var(--black);
+  background-color: var(--whiteColor);
+  border: 2px solid var(--lightBlueShade);
+  transition: all 0.3s ease;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .headerMenuMobileLogoButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .headerMenuMobileLogoButton
+  > .headerMobileLogo
+  > .logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .headerMenuMobileLogoButton
+  > .headerMobileLogo
+  > .logoContainer
+  > .logo {
+  width: 30%;
+  height: 30%;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .headerMenuMobileLogoButton
+  > .headerMobileLogo
+  > .logoContainer
+  > .logoText {
+  color: var(--whiteColor);
+  font-size: 15px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  transition: 4s;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer {
+  padding: 10px;
+  border: none;
+  background-color: var(--primaryColor);
+  box-shadow: var(--boxShadowA) 0px 3px 6px, var(--boxShadowB) 0px 3px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .isOpenMenuContent
+  > .logoContainerOpen
+  > .logoContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .isOpenMenuContent
+  > .logoContainerOpen
+  > .logoContainer
+  > .logoText {
+  color: var(--whiteColor);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .isOpenMenuContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .mobileNav
+  > .headerMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .mobileNav
+  > .headerMenu
+  > li {
+  /* text-align: center; */
+  font-size: 15px;
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .mobileNav
+  > .headerMenu
+  > li
+  > a {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+.mainHeader
+  > .headerContainer
+  > .headerContents
+  > .headerMenuMobile
+  > .isOpenMenu
+  > .isOpenMenuContainer
+  > .mobileNav
+  > .headerMenu
+  > li
+  > a:hover {
+  background-color: var(--blueShade);
+  width: 100%;
+  padding: 10px 100px;
+}
+
+/* Hero Section */
+.heroContainer {
+  margin: 450px 0;
+  position: relative;
+  height: 100%;
+}
+
+.heroContainer > .heroMainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  color: var(--whiteColor);
+  margin: 120px 0;
+}
+
+.heroContainer > .heroMainSection > .heroSection > .heroHeadingText {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 0 20px 0;
+}
+
+.heroContainer > .heroMainSection > .heroSection > .heroText {
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.heroContainer
+  > .heroMainSection
+  > .heroSection
+  > .wordChange
+  > .wordChangeText {
+  background-image: linear-gradient(
+    to right,
+    var(--blueShade),
+    var(--lightBlueShade)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: var(--font-family);
+  font-size: 50px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.heroContainer > .heroMainSection > img {
+  width: 50%;
+  height: 70vh;
+  border: none;
+}
+
+.heroContainer > .heroMainSection > .paragraphDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  width: 100%;
+}
+
+.heroContainer > .heroMainSection > .paragraphDiv > .paragrapText {
+  margin: 30px 0;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.heroContainer > .heroMainSection > .ctaAndArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.heroContainer > .heroMainSection > .ctaAndArrow > .arrowBtn {
+  width: 12px;
+}
+
+.heroContainer > .heroMainSection > .ctaAndArrow > .ctaBtn {
+  background-color: var(--lightBlueShade);
+  color: var(--black);
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px 40px;
+  border-radius: 10px 0 10px 0;
+  text-decoration: none;
+  box-shadow: var(--boxShadowA) 0px 3px 6px, var(--boxShadowB) 0px 3px 6px;
+}
+
+.heroContainer > .heroMainSection > .ctaAndArrow > .ctaBtn:hover {
+  color: var(--black);
+  font-weight: bold;
+  background-color: var(--whiteColor);
+  border: 2px solid var(--lightBlueShade);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Body Section */
+.bodyMain > .bodyMainSection > .bodyMainHeadingDiv > .rightSide {
+  display: none;
+}
+
+.bodyMain > .bodyMainSection > .bodyMainHeadingDiv > .textHeading {
+  color: var(--whiteColorShade);
+  font-size: 40px;
+  text-align: center;
+}
+
+.bodyMain > .bodyMainSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.featuresMain > .features {
+  display: flex;
+  gap: 20px;
+  width: 100vw;
+  padding: 0 20px;
+}
+
+.featuresMain > .features > .featuresContainer {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--blueShadeB);
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.featuresMain > .features > .featuresContainer > .featuresHeading {
+  color: var(--whiteColorShade);
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+.featuresMain > .features > .featuresContainer > .featuresText {
+  color: var(--whiteColorShade);
+  font-size: 15px;
+  text-align: center;
+  font-weight: 100;
+  position: absolute;
+  top: 150px;
+  padding: 10px;
+}
+
+.featuresMain > .features > .featuresContainer > .security {
+  width: 40%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.bodyMain > .bodyMainSection > .consumerSection {
+  padding: 20px;
+}
+
+.bodyMain > .bodyMainSection > .consumerSection > .consumerSecContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primaryColor);
+  border: 1px solid var(--blueShade);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.bodyMain
+  > .bodyMainSection
+  > .consumerSection
+  > .consumerSecContainer
+  > .consumerTextSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.bodyMain
+  > .bodyMainSection
+  > .consumerSection
+  > .consumerSecContainer
+  > .consumerTextSection
+  > .consumerHeadingH4 {
+  color: var(--whiteColorShade) !important;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--blueShade);
+  padding: 10px 40px;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.bodyMain
+  > .bodyMainSection
+  > .consumerSection
+  > .consumerSecContainer
+  > .consumerTextSection
+  > .consumerHeadingH1 {
+  color: var(--whiteColor);
+  font-size: 55px;
+  padding: 0 20px 0 0;
+  text-transform: capitalize;
+}
+
+.bodyMain
+  > .bodyMainSection
+  > .consumerSection
+  > .consumerSecContainer
+  > .consumerTextSection
+  > .consumertextp {
+  color: var(--whiteColor);
+  font-size: 10px;
+}
+
+.bodyMain
+  > .bodyMainSection
+  > .consumerSection
+  > .consumerSecContainer
+  > .consumerTextSection
+  > .consumerBtn {
+  color: var(--black);
+  font-size: 15px;
+  text-decoration: none;
+  background-color: var(--lightBlueShade);
+  padding: 10px 40px;
+  border-radius: 10px 0 10px 0;
+  box-shadow: var(--boxShadowA) 0px 3px 6px, var(--boxShadowB) 0px 3px 6px;
+}
+
+.bodyMain
+  > .bodyMainSection
+  > .consumerSection
+  > .consumerSecContainer
+  > .consumerTextSection
+  > .consumerBtn:hover {
+  color: var(--black);
+  background-color: var(--whiteColor);
+  border: 2px solid var(--lightBlueShade);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+.mainFooter {
+  background-color: var(--primaryColor);
+  width: 100%;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+.mainFooter > .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mainFooter > .footerContainer > .footerSectionA {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100vw;
+}
+
+.mainFooter > .footerContainer > .footerSectionA > .logoAndSub > .logoAndText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--whiteColor);
+}
+
+.mainFooter > .footerContainer > .footerSectionA > .logoAndSub > .subForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--whiteColor);
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .logoAndSub
+  > .subForm
+  > .subFormH1 {
+  color: var(--whiteColor);
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .logoAndSub
+  > .subForm
+  > .inputAndImage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .logoAndSub
+  > .subForm
+  > .inputAndImage
+  > .subFormInput {
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--whiteColor);
+  width: 100%;
+  padding: 10px 0;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .logoAndSub
+  > .subForm
+  > .inputAndImage
+  > .subFormInput:focus {
+  outline: none;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .logoAndSub
+  > .subForm
+  > .inputAndImage
+  > .subFormRightCont {
+  border: 1px solid var(--lightBlueShade);
+  border-radius: 20px;
+  padding: 5px;
+  margin: 0 0 10px 0;
+}
+
+.mainFooter > .footerContainer > .footerSectionA > .contactUsSec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--whiteColor);
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .contactUsSec
+  > .contactusContents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .contactUsSec
+  > .contactusContents
+  > .phone,
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .contactUsSec
+  > .contactusContents
+  > .email,
+.mainFooter
+  > .footerContainer
+  > .footerSectionA
+  > .contactUsSec
+  > .contactusContents
+  > .location {
+  display: flex;
+  gap: 10px;
+  width: 70%;
+}
+
+.mainFooter > .footerContainer > .lineBreak {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background: var(--lightBlueShade);
+}
+
+.mainFooter > .footerContainer > .footerSectionB > .copyAndSocial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionB
+  > .copyAndSocial
+  > .copyAndTerms {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--whiteColor);
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionB
+  > .copyAndSocial
+  > .copyAndTerms
+  > .termsAndPrivacy {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionB
+  > .copyAndSocial
+  > .copyAndTerms
+  > .termsAndPrivacy
+  > a {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionB
+  > .copyAndSocial
+  > .copyAndTerms
+  > .termsAndPrivacy
+  > a:hover {
+  color: var(--whiteColorShade);
+}
+
+.mainFooter > .footerContainer > .footerSectionB > .copyAndSocial > .socials {
+  display: flex;
+  gap: 20px;
+}
+
+.mainFooter
+  > .footerContainer
+  > .footerSectionB
+  > .copyAndSocial
+  > .socials
+  > a
+  > img {
+  width: 20px;
+}
+
+/* Order Page */
+.mainOrderHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mainOrderHome > .homeHeader {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding: 10px 20px;
+  background-color: var(--primaryColor);
+  left: 0;
+  z-index: 100;
+}
+
+.mainOrderHome > .orderSection {
+  margin: 50px;
+}
+
+.mainOrderHome > .orderSection > .trust {
+  background: var(--blueShade);
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  top: 70px;
+  z-index: 10;
+}
+
+.mainOrderHome > .orderSection > .trust > .trustText {
+  text-align: center;
+  color: var(--whiteColor);
+  font-size: 12px;
+}
+
+.mainOrderHome > .orderSection {
+  width: 100vw;
+  height: 100%;
+  /* padding: 20px; */
+}
+
+.mainOrderHome > .orderSection > .orders {
+  margin: 50px 0;
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 110px 0; */
+}
+
+.mainOrderHome > .orderSection > .orders > .orderContainer {
+  position: relative;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderContainer > .orderPlacing {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+  width: 100%;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderContainer
+  > .orderPlacing
+  > .product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  height: 80vh;
+  scrollbar-width: none;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderContainer
+  > .orderPlacing
+  > .product
+  > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderContainer
+  > .orderPlacing
+  > .product
+  > img:hover {
+  opacity: 0.9;
+}
+
+.mainOrderHome > .orderSection > .orders {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderShow {
+  width: 70%;
+  background-color: var(--blueShadeB);
+  height: 80vh;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderShow > img {
+  border-radius: 20px;
+  width: 100%;
+  height: 90%;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderShow > .buttons > .btnContainer {
+  position: absolute;
+  right: 10px;
+  bottom: -40px;
+  display: flex;
+  gap: 20px;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderShow > .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderShow > .buttons > .btnContainer > .previous,
+.mainOrderHome > .orderSection > .orders > .orderShow > .buttons > .btnContainer > .next {
+  background-color: var(--blueShade);
+  border: 1px solid var(--lightBlueShade);
+  padding: 10px;
+  color: var(--lightBlueShade);
+  border-radius: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.mainOrderHome > .orderSection > .orders > .orderDetails {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderDetailsContainer {
+  color: var(--whiteColor);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderDetailsContainer
+  > .orderDetailsH1 {
+  font-size: 20px;
+  color: var(--lightBlueShade);
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderDetailsContainer
+  > .orderDetailsH4 {
+  font-size: 12px;
+  color: var(--whiteColor);
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderDetailsContainer
+  > .orderDetailsP {
+  font-size: 12px;
+  color: var(--whiteColor);
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice {
+  border: 1px solid var(--blueShade);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick
+  > .orderColorChoiceA,
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick
+  > .orderColorChoiceB {
+  background: var(--blueShade);
+  padding: 15px 40px;
+  border-radius: 40px;
+  display: flex;
+  gap: 10px;
+  color: var(--whiteColor);
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick
+  > .orderColorChoiceA:hover,
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick
+  > .orderColorChoiceB:hover {
+  border: 1px solid var(--lightBlueShade);
+  background-color: #141f1f;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoiceH1 {
+  color: var(--whiteColor);
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick
+  > .orderColorChoiceA
+  > input[type="checkbox"],
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderColorChoice
+  > .orderColorChoicePick
+  > .orderColorChoiceB
+  > input[type="checkbox"] {
+  padding: 10px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing {
+  padding: 20px;
+  border: 1px solid var(--blueShade);
+  margin: 20px 0;
+  border-radius: 30px;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing
+  > .orderPackage {
+  color: var(--whiteColor);
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing 
+  > .orderPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing 
+  > .orderPrice 
+  > .pricePicking {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background-color: #2d3b3b;
+    padding: 20px 10px;
+    border-radius: 20px;
+  }
+
+  .mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing 
+  > .orderPrice 
+  > .pricePicking 
+  > .orderPriceh1 {
+    font-size: 15px;
+    color: var(--whiteColor);
+  }
+
+  .mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing 
+  > .orderPrice 
+  > .pricePicking 
+  > .orderPriceh1:focus {
+    color: var(--lightBlueShade);
+  }
+
+  .mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing 
+  > .orderPrice 
+  > .pricePicking 
+  > .orderPriceh2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--whiteColor);
+  }
+
+  .mainOrderHome
+  > .orderSection
+  > .orders
+  > .orderDetails
+  > .orderChoices
+  > .orderPricing 
+  > .orderPrice 
+  > .pricePicking 
+  > .orderPriceh3 {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--whiteColor);
+    text-decoration: line-through;
+  }
+
+  .mainOrderHome > .orderSection > .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: -30px 0;
+  }
+
+  .mainOrderHome > .orderSection > .btn > .purchaseBtn {
+    padding: 10px 40px;
+    width: 100%;
+    background-color: var(--lightBlueShade);
+    border: none;
+    border-radius: 10px;
+  }
+
+@media (min-width: 1045px) {
+  .mainHeader > .headerContainer > .headerContents > .headerMenuMobile {
+    display: none;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,322 @@
+/* Ipad Screens Style */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Header */
+  .mainHeader > .headerContainer > .headerContents > .headerMenuDesktop {
+    display: none;
+  }
+
+  .mainHeader > .headerContainer > .headerContents > .headerMenuMobile {
+    display: flex;
+  }
+
+  .mainHeader
+    > .headerContainer
+    > .headerContents
+    > .headerMenuMobile
+    > .headerMenuMobileLogoButton {
+    position: fixed !important;
+    width: 100vw;
+    top: 0;
+    padding: 10px 15px;
+    background-color: var(--primaryColor);
+    left: 0;
+    z-index: 100;
+  }
+
+  .heroContainer {
+    margin: 300px 0;
+  }
+
+  .heroContainer > .heroMainSection > .heroSection > .heroHeadingText {
+    font-size: 20px;
+  }
+
+  .heroContainer > .heroMainSection > .heroSection > .heroText {
+    font-size: 50px;
+  }
+
+  .heroContainer
+    > .heroMainSection
+    > .heroSection
+    > .wordChange
+    > .wordChangeText {
+    font-size: 40px;
+  }
+
+  .heroContainer > .heroMainSection > .paragraphDiv {
+    padding: 10px 0;
+  }
+
+  .heroContainer > .heroMainSection > .paragraphDiv > .paragrapText {
+    margin: 30px 0;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .heroContainer > .heroMainSection > .ctaAndArrow {
+    gap: 20px;
+  }
+
+  /* Body */
+  .bodyMain > .bodyMainSection > .bodyMainHeadingDiv {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .bodyMain > .bodyMainSection > .bodyMainHeadingDiv > .rightSide {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .bodyMainHeadingDiv
+    > .rightSide
+    > .rightSideCont {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .bodyMainHeadingDiv
+    > .rightSide
+    > .rightSideCont
+    > .rightSideImgContainer {
+    width: 40px;
+    background-color: var(--blueShade);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    /* box-shadow: var(--boxShadowA) 0px 3px 6px, var(--boxShadowB) 0px 3px 6px; */
+    animation: blink 5s infinite;
+    border-radius: 20px;
+  }
+
+  @keyframes blink {
+    0% {
+      box-shadow: 0 0 10px var(--lightBlueShade);
+    }
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .bodyMainHeadingDiv
+    > .rightSide
+    > .rightSideCont
+    > .rightSideImgContainer
+    > .rightImg {
+    width: 20px;
+    height: 10px;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .bodyMainHeadingDiv
+    > .rightSide
+    > .rightSideCont
+    > .rightText {
+    font-size: 10px;
+    color: var(--lightBlueShade);
+    text-align: center;
+  }
+
+  .featuresMain > .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .featuresMain > .features > .featuresContainer {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .featuresMain > .features > .featuresContainer > .featuresHeading {
+    padding: 10px;
+  }
+
+  .featuresMain > .features > .featuresContainer > .featuresText {
+    font-size: 20px;
+  }
+
+  .bodyMain > .bodyMainSection > .consumerSection {
+    padding: 20px;
+  }
+
+  .bodyMain > .bodyMainSection > .consumerSection > .consumerSecContainer {
+    width: 100%;
+    flex-direction: column;
+    padding: 100px;
+    gap: 80px;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .consumerSection
+    > .consumerSecContainer
+    > .consumerTextSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .consumerSection
+    > .consumerSecContainer
+    > .consumerTextSection
+    > .consumerHeadingH1 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .consumerSection
+    > .consumerSecContainer
+    > .walletPicSec
+    > .walletPic {
+    width: 100%;
+  }
+
+  .bodyMain
+    > .bodyMainSection
+    > .consumerSection
+    > .consumerSecContainer
+    > .consumerTextSection
+    > .consumerBtn {
+    padding: 8px 20px;
+  }
+
+  /* Footer */
+  .mainFooter > .footerContainer > .footerSectionA {
+    gap: 200px;
+  }
+
+  /* Orders */
+  .mainOrderHome > .orderSection > .trust {
+    top: 50px;
+  }
+
+  .mainOrderHome > .orderSection > .orders {
+    flex-direction: column;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderContainer
+    > .orderPlacing
+    > .product {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .mainOrderHome > .orderSection > .orders > .orderShow {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .mainOrderHome > .orderSection > .orders > .orderDetails {
+    padding: 0;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderDetailsContainer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderChoices
+    > .orderColorChoice {
+    padding: 40px;
+    width: 100%;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderChoices
+    > .orderColorChoice
+    > .orderColorChoicePick
+    > .orderColorChoiceA,
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderChoices
+    > .orderColorChoice
+    > .orderColorChoicePick
+    > .orderColorChoiceB {
+    padding: 20px 50px;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderChoices
+    > .orderPricing
+    > .orderPrice
+    > .pricePicking {
+    padding: 50px;
+    grid-area: 4px;
+    border-radius: 10px;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderChoices
+    > .orderPricing
+    > .orderPrice
+    > .pricePicking
+    > .orderPriceh1 {
+    font-size: 20px;
+  }
+
+  .mainOrderHome
+    > .orderSection
+    > .orders
+    > .orderDetails
+    > .orderChoices
+    > .orderPricing
+    > .orderPrice
+    > .pricePicking
+    > .orderPriceh2 {
+    font-size: 15px;
+  }
+
+  .mainOrderHome > .orderSection > .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: -30px 0;
+  }
+
+  .mainOrderHome > .orderSection > .btn > .purchaseBtn {
+    padding: 10px 40px;
+    width: 100%;
+    background-color: var(--lightBlueShade);
+    border: none;
+    border-radius: 10px;
+  }
+}

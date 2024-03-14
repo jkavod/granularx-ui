@@ -1,0 +1,6 @@
+export { default as Homepage } from './Home'
+export { default as Buyer } from './Buyer'
+export { default as Seller } from './Seller'
+export { default as Login } from './Login'
+export { default as Signup } from './Signup'
+export { default as Order } from './Order'
