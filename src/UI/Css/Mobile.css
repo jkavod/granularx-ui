@@ -153,6 +153,14 @@
     gap: 20px;
   }
 
+  .featuresMain > .features > .featuresContainer > .featuresText {
+   font-size: 12px;
+  }
+
+  .featuresMain > .features > .featuresContainer > .security {
+   width: 30%;
+  }
+
   .bodyMain
     > .bodyMainSection
     > .consumerSection
