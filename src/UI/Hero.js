@@ -41,8 +41,8 @@ export default function Hero() {
         </div>
         <div className="ctaAndArrow">
           <img src={ArrowDown} alt="arrow down" className="arrowBtn" />
-          <Link to={"/"} className="ctaBtn">
-            Sign Up
+          <Link to={'/order'} className="ctaBtn">
+            Order
           </Link>
         </div>
       </section>
