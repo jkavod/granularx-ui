@@ -99,7 +99,7 @@ export default function Order() {
               <img
                 src={selectedProduct}
                 alt="Selected Product"
-                className="selectedProduct show"
+                className="selectedProduct"
               />
             )}
             <div className="buttons">
